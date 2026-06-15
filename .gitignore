@@ -1,0 +1,12 @@
+# Build artifacts
+*.pdf
+
+# Project-specific content (not part of the template)
+Sortalys Alternatives Matching.docx
+Sortalys Alternatives Matching.md
+sortalys-alternatives-matching.typ
+brausetablette.png
+ecomucyl.webp
+
+# Local tooling
+.claude/
