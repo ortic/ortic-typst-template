@@ -39,6 +39,22 @@ typst compile example.typ   # no --font-path needed
 
 ## Usage
 
+Once published to Typst Universe, import it directly — Typst downloads and
+caches the package automatically, no clone needed:
+
+```typst
+#import "@preview/ortic-template:0.1.0": ortic-spec, callout, req, kv-list
+```
+
+> **Fonts:** Typst does not auto-load fonts bundled in a package, so the
+> published package does not ship them. For the brand font, install Open Sans
+> system-wide (e.g. into `~/.local/share/fonts/`) or pass `--font-path` to a
+> folder containing it. Without it the template falls back to Liberation /
+> DejaVu Sans.
+
+You can also import the local file directly when working inside this repo
+(`fonts/` is available here for that):
+
 ```typst
 #import "template.typ": ortic-spec, callout, req, kv-list
 
